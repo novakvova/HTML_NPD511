@@ -1,0 +1,81 @@
+body {
+    background-color: #93b78a;
+}
+
+.dialog {
+     display: none;  /* Діалогове вікно є блочним елементом */
+     background-color: #fff;  /* Білий фон для діалогового вікна */;
+     width: 600px;  /* Фіксована ширина */
+     position: fixed;  /* Фіксоване позиціонування */
+     top: 50%;  /* Відстань від верхнього краю вікна браузера */
+     left: 50%;  /* Відстань від лівого краю вікна браузера */
+     transform: translateX(-50%) translateY(-50%);  /* Центрування по горизонталі та вертикалі */
+}
+
+.dialog header {
+   height: 55px;  /* Висота заголовка */
+   background-color: #ff6666;  /* Червоний фон заголовка */
+}
+
+.dialog header .title {
+    font-size: 20px;  /* Розмір шрифту заголовка */
+    float: left;  /* Вирівнювання заголовка по лівому краю */
+    color: white;  /* Білий колір тексту заголовка */
+    margin: 15px 0 0 15px;
+}
+
+.dialog header .my-close {
+    float: right;
+    margin: 5px 10px 0 0;
+    color: #cc3333;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dialog main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    clear: both;  /* Очищення обтікання для основного вмісту */
+    color: #332f33;  /* Колір тексту основного вмісту */
+    font-size: 20px;  /* Розмір шрифту основного вмісту */
+    margin: 15px;  /* Відступи навколо основного вмісту */
+}
+
+.dialog main img {
+    width: 300px;  /* Фіксована ширина зображення */
+}
+
+.dialog footer {
+    margin-top: 25px;
+}
+
+.dialog footer hr {
+    border: 1px #ecedec solid;  /* Стиль лінії розділення */
+}
+
+.dialog footer .buttons {
+    float: right;  /* Вирівнювання кнопок по правому краю */
+    height: 30px; /* Висота контейнера для кнопок */
+    margin: 10px;
+}
+
+.dialog footer .buttons a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px #ccc solid;
+    color: #333;
+    border-radius: 5px;
+    margin: 3px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.dialog footer .buttons a:hover {
+    margin: 1px;
+    border-radius: 0;
+    padding: 7px 12px;
+}
+
+.dialog footer .buttons .danger {
+    color: #fff;
+    background-color: #ff6666;
+}
